@@ -5,8 +5,8 @@ This repository contains two separate Kodi add-ons for Kodi Nexus (i.e., Kodi 20
 ### <u>Unofficial Spotify for Kodi Add-on</u>
 
 This is the original Unofficial Spotify for Kodi Add-on developed by Marcelveldt and enhanced to work for Kodi Nexus
-by Ldsz, Elkropac, FernetMenta, and Glk1001. Version 1.3.5 has had a lot of code cleaning and now uses 'bottle' combined
-with 'spotty' to do audio streaming. It's been tested on Ubuntu 22.04 and Windows 10. Not on Mac or Arm.
+by Ldsz, Elkropac, FernetMenta, and Glk1001. Version 1.3.5+ has had a lot of code cleaning and now uses 'bottle' combined
+with 'spotty' to do audio streaming. It's been tested on Ubuntu 22.04, Windows 10, and some Arm devices. Not on Mac.
 
 Source code at: https://github.com/glk1001/plugin.audio.spotify
 
@@ -40,4 +40,7 @@ window saying the add-on has been installed.)
 *"Settings/Add-ons/My add-ons"* go to the Spotify add-on and press *"Configure"*. You can then enter your credentials:<br><br>
 ![spotify credentials image](README-spotify-credentials.png "Spotify credentials")
 
-1. **WARNING:** The Spotify plugin is broken on older versions of Ubuntu 22.04. If you have 'Python 3.10.6' or greater it should be OK.
+1. **WARNING:** If you have an already installed the Spotify plugin and you experience errors or menu issues with this new one,
+then run the "Clear the plugin cache" option from the first Spotify page. Then restart Kodi.
+
+3. **WARNING:** The Spotify plugin is broken on older versions of Ubuntu 22.04. If you have 'Python 3.10.6' or greater it should be OK.
