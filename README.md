@@ -6,7 +6,10 @@ This repository contains two separate Kodi add-ons for Kodi Nexus (i.e., Kodi 20
 
 This is the original Unofficial Spotify for Kodi Add-on developed by Marcelveldt and enhanced to work for Kodi Nexus
 by Ldsz, Elkropac, FernetMenta, and Glk1001. Version 1.3.5+ has had a lot of code cleaning and now uses 'bottle' combined
-with 'spotty' to do audio streaming. It's been tested on Ubuntu 22.04, Windows 10, and some Arm devices. Not on Mac.
+with 'spotty' to do audio streaming. It's been tested on Ubuntu 22.04, Windows 10, Android 9 (Fire TV Cube),and some other
+Arm devices. Not on Mac.
+
+NOTE: Will not work on Android 10+ - Google changed permissions making it very difficult for apps to execute binaries.
 
 Source code at: https://github.com/glk1001/plugin.audio.spotify
 
