@@ -11,6 +11,8 @@ Arm devices. Not on Mac.
 
 NOTE: Will not work on Android 10+ - Google changed permissions making it very difficult for apps to execute binaries.
 
+NEW in 1.3.8: Added setting to turn off Spotify normalization (default on). "Off" will make tracks play louder.
+
 Source code at: https://github.com/glk1001/plugin.audio.spotify
 
 ### <u>Goom++ Visualization Add-on</u>
