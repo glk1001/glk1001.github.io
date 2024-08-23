@@ -9,9 +9,12 @@ by Ldsz, Elkropac, FernetMenta, and Glk1001. Version 1.3.5+ has had a lot of cod
 with 'spotty' to do audio streaming. It's been tested on Ubuntu 24.04, Windows 11, Android 9 (Fire TV Cube),and some other
 Arm devices. Not on Mac.
 
+NEW in 1.3.11: Fixed get all albums option for artist. Now gets only albums. Spotify recently made an API change that caused
+get albums to get all albums and all 'appears on' tracks. Get singles and get everything for artist options also added.
+
 NEW in 1.3.10: Removed 'user/password' authentication (Spotify removed this mode.) Replaced with zeroconf authentication.
 
-**NOTE:** Version 1.3.10 is the only version that will now work with the changed Spotify authentication requirements.
+**NOTE:** Version 1.3.10+ is the only version that will now work with the changed Spotify authentication requirements.
 
 NOTE: Will not work on Android 10+ - Google changed permissions making it very difficult for apps to execute binaries.
 
