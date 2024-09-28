@@ -9,6 +9,10 @@ by Ldsz, Elkropac, FernetMenta, and Glk1001. Version 1.3.5+ has had a lot of cod
 with 'spotty' to do audio streaming. It's been tested on Ubuntu 24.04, Windows 11, Android 9 (Fire TV Cube),and some other
 Arm devices. Not on Mac.
 
+NEW in 1.3.12: Added a workaround setting "problem_with_terminate_streaming" to not terminate streaming early. This setting
+was added for Raspberry Pi users. If you're finding songs skipping or otherwise not playing smoothly, then set
+"problem_with_terminate_streaming" to True.
+
 NEW in 1.3.11: Fixed get all albums option for artist. Now gets only albums. Spotify recently made an API change that caused
 get albums to get all albums and all 'appears on' tracks. Get singles and get everything for artist options also added.
 
