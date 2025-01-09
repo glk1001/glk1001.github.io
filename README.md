@@ -9,6 +9,9 @@ by Ldsz, Elkropac, FernetMenta, and Glk1001. Version 1.3.5+ has had a lot of cod
 with 'spotty' to do audio streaming. It's been tested on Ubuntu 24.04, Windows 11, Android 9 (Fire TV Cube),and some other
 Arm devices. Not on Mac.
 
+NEW in 1.3.13: Changed the default album retrieval for 'artists' to just albums and singles instead of everything. And added
+more logging to figure how many cached/non-cached things the plugin is retrieving. (By default, turned off.)
+
 NEW in 1.3.12: Added a workaround setting "problem_with_terminate_streaming" to not terminate streaming early. This setting
 was added for Raspberry Pi users. If you're finding songs skipping or otherwise not playing smoothly, then set
 "problem_with_terminate_streaming" to True.
