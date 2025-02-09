@@ -9,6 +9,8 @@ by Ldsz, Elkropac, FernetMenta, and Glk1001. Version 1.3.5+ has had a lot of cod
 with 'spotty' to do audio streaming. It's been tested on Ubuntu 24.04, Windows 11, Android 9 (Fire TV Cube),and some other
 Arm devices. Not on Mac.
 
+NEW in 1.3.14: Upgraded python 'bottle' module to version '0.14-dev'. Plugin now works with python 3.13.
+
 NEW in 1.3.13: Changed the default album retrieval for 'artists' to just albums and singles instead of everything. And added
 more logging to figure how many cached/non-cached things the plugin is retrieving. (By default, turned off.)
 
