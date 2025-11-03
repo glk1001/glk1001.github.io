@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goom++ Nexus Downloads</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: 500;
+            transition: gap 0.3s ease;
+        }
+        
+        .back-link:hover {
+            gap: 12px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .download-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .download-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .download-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+        
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .icon {
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .file-details {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .file-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 3px;
+        }
+        
+        .version-tag {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .download-btn {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+        
+        .download-btn:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 600px) {
+            .download-item {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+            
+            .download-btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to all plugins</a>
+        
+        <header>
+            <h1>✨ Goom++ Nexus Visualization</h1>
+            <p class="subtitle">Choose your platform</p>
+        </header>
+        
+        <div class="download-section">
+            <h2 class="section-title">Downloads</h2>
+            
+            <div class="download-item">
+                <div class="file-info">
+                    <div class="icon">🪟</div>
+                    <div class="file-details">
+                        <span class="file-name">visualization.goom-pp-nexus-windows-x86_64.zip</span>
+                        <span class="version-tag">Windows (x86_64)</span>
+                    </div>
+                </div>
+                <a href="visualization.goom-pp-nexus-windows-x86_64.zip" class="download-btn" download>Download</a>
+            </div>
+            
+            <div class="download-item">
+                <div class="file-info">
+                    <div class="icon">🍎</div>
+                    <div class="file-details">
+                        <span class="file-name">visualization.goom-pp-nexus-macos.zip</span>
+                        <span class="version-tag">macOS</span>
+                    </div>
+                </div>
+                <a href="visualization.goom-pp-nexus-macos.zip" class="download-btn" download>Download</a>
+            </div>
+            
+            <div class="download-item">
+                <div class="file-info">
+                    <div class="icon">🐧</div>
+                    <div class="file-details">
+                        <span class="file-name">visualization.goom-pp-nexus-linux-x86_64.zip</span>
+                        <span class="version-tag">Linux (x86_64)</span>
+                    </div>
+                </div>
+                <a href="visualization.goom-pp-nexus-linux-x86_64.zip" class="download-btn" download>Download</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

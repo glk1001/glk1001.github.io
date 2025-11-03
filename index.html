@@ -1,9 +1,206 @@
 <!DOCTYPE html>
-<a href="plugin.audio.spotify-1.3.10.zip">plugin.audio.spotify-1.3.10.zip</a>
-<a href="plugin.audio.spotify-1.3.11.zip">plugin.audio.spotify-1.3.11.zip</a>
-<a href="plugin.audio.spotify-1.3.12.zip">plugin.audio.spotify-1.3.12.zip</a>
-<a href="plugin.audio.spotify-1.3.13.zip">plugin.audio.spotify-1.3.13.zip</a>
-<a href="plugin.audio.spotify-1.3.14.zip">plugin.audio.spotify-1.3.14.zip</a>
-<a href="visualization.goom-pp-nexus-linux-x86_64.zip">visualization.goom-pp-nexus-linux-x86_64.zip</a>
-<a href="visualization.goom-pp-nexus-macos.zip">visualization.goom-pp-nexus-macos.zip</a>
-<a href="visualization.goom-pp-nexus-windows-x86_64.zip">visualization.goom-pp-nexus-windows-x86_64.zip</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin Downloads</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .plugins-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .plugin-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plugin-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .plugin-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+
+        .plugin-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .plugin-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
+        .plugin-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .plugin-features li {
+            padding: 8px 0;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .plugin-features li:before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .download-link {
+            display: inline-block;
+            padding: 14px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+        }
+
+        .download-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .version-info {
+            display: inline-block;
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 850px) {
+            .plugins-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📦 Plugin Downloads</h1>
+            <p class="subtitle">High-quality plugins for your media experience</p>
+        </header>
+
+        <div class="plugins-grid">
+            <div class="plugin-card">
+                <div class="plugin-icon">🎵</div>
+                <h2 class="plugin-title">Unofficial Spotify for Kodi Add-on</h2>
+                <span class="version-info">Latest: v1.3.13</span>
+                <p class="plugin-description">
+                    From Kodi, stream music directly from Spotify with full playback control and integration with access to your playlists and favorites.
+                </p>
+                <ul class="plugin-features">
+                    <li>Full Spotify integration with Kodi</li>
+                    <li>Playlist support</li>
+                    <li>High-quality audio streaming</li>
+                </ul>
+                <a href="spotify.html" class="download-link">View Downloads →</a>
+            </div>
+
+            <div class="plugin-card">
+                <div class="plugin-icon">✨</div>
+                <h2 class="plugin-title">Goom++ Nexus Visualization</h2>
+                <span class="version-info">Multi-platform</span>
+                <p class="plugin-description">
+                    Beautiful music visualization with stunning real-time effects. Transform your audio into mesmerizing visual experiences.
+                </p>
+                <ul class="plugin-features">
+                    <li>Real-time audio visualization</li>
+                    <li>For Linux only</li>
+                    <li>GPU-accelerated rendering</li>
+                </ul>
+                <a href="goom.html" class="download-link">View Downloads →</a>
+            </div>
+
+            <div class="plugin-card">
+                <div class="plugin-icon">✨</div>
+                <h2 class="plugin-title">The Compleat Barks Disney Reader</h2>
+                <span class="version-info">Multi-platform</span>
+                <p class="plugin-description">
+                    "The Compleat Carl Barks Disney Reader" for reading and exploring the Fantagraphics Barks Library.
+                </p>
+                <ul class="plugin-features">
+                    <li>A Barks-centric environment for exploring and reading the Fantagraphics Carl Barks Disney Library</li>
+                    <li>Chronological, Series, and Tags listing with search and index.</li>
+                    <li>All censorship removed.</li>
+                    <li>Fast, quality reader for all stories.</li>
+                    <li>Copius amounts of Barksian background and support images.</li>
+                </ul>
+                <a href="app.html" class="download-link">More Info →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
