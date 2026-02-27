@@ -646,6 +646,8 @@
 
                 <div class="install-step">
                     <h4>Step 2: Move the Downloaded Files</h4>
+                    <strong>IMPORTANT: Do NOT extract to <i>"C:\Program Files"</i> - the application needs write access
+                    to create its runtime environment.</strong><br/><br/>
                     <p>
                         Move the executable and data files to your preferred location but note that this must be a
                         directory where you have write permissions, such as:
@@ -654,8 +656,6 @@
                         <li><strong>"C:\BarksReader"</strong></li>
                         <li><strong>"C:\Users\YourUsername\Documents\BarksReader"</strong></li>
                     </ul>
-                    Do NOT extract to <strong>"C:\Program Files"</strong> - the application needs write access
-                    to create its runtime environment.
                     </p>
                     <p>The following steps assume you've chosen <strong>"C:\Users\YourUsername\BarksReader"</strong>
                         as the Barks reader app directory.
@@ -664,24 +664,25 @@
 
                 <div class="install-step">
                     <h4>Step 3: Organise Your Fantagraphics Zips</h4>
-                    <p>Your Fantagraphics comic zips must be in a single folder and the first part of each volumes'
-                        filename must be the volume number, from '01' to '28'. For example:
+                    <p>Your Fantagraphics comic zips must be in a single folder and can be either '.zip' or '.cbz'
+                        files. The first part of each volumes' filename must be the volume number, from '01' to '29'.
+                        For example:
                     <table class="requirements-table filename-example-table">
                         <tbody>
                         <tr>
                             <td><strong>01 - Donald Duck - Finds Pirate Gold.cbz</strong></td>
                         </tr>
                         <tr>
-                            <td><strong>02 - Donald Duck - Frozen Gold.cbz</strong></td>
+                            <td><strong>02 - Donald Duck - Frozen Gold.zip</strong></td>
                         </tr>
                         <tr>
                             <td><strong>...</strong></td>
                         </tr>
                         <tr>
-                            <td><strong>27 - Donald Duck - 'Duck Luck'.cbz</strong></td>
+                            <td><strong>28 - Uncle Scrooge - 'Cave of Ali Baba'.zip</strong></td>
                         </tr>
                         <tr>
-                            <td><strong>28 - Uncle Scrooge - 'Cave of Ali Baba'.cbz</strong></td>
+                            <td><strong>29 - Donald Duck - 'The Lonely Lighthouse on Cape Quack'.cbz</strong></td>
                         </tr>
                         </tbody>
                     </table>
@@ -710,21 +711,30 @@
                     <p>You may need to allow the app through Windows Defender SmartScreen on first run.</p>
                     <p>You can also create a shortcut by right-clicking: <strong>barks-reader-win.exe</strong> → Send to
                         → Desktop (create shortcut) for easy access.</p>
+
+                    <p><strong>IMPORTANT:</strong> Depending on the speed of your machine and your internet connection,
+                    this may take a few minutes for the app to launch. You will see a black console screen at first (where all
+                    logging will go) but once the exe has self-extracted you will start to see activity (detailed in the
+                    next step). Depending on your machine
+                    and connection it still may take a while to unzip the supporting data packs. Once these are
+                    done (and providing there are no errors) you will get a welcome screen popup. Here you can
+                    press OK to launch the reader app. One you've done the install for the first time, subsequent
+                    app launches should be fairly quick.</p>
                 </div>
 
                 <div class="install-step">
                     <h4>Step 6: On First Launch</h4>
                     <p>When the application is first launched it will do further installation steps:
                     <ul>
-                        <li>Run the astral python package manager <strong>'uv'</strong> to download and install python
-                            packages required by the app
+                        <li>It will run the astral python package manager <strong>'uv'</strong> to download and install python
+                            packages required by the app,
                         </li>
-                        <li>Unzip <strong>"barks-reader-data-1.zip"</strong> and
+                        <li>It will unzip <strong>"barks-reader-data-1.zip"</strong> and
                             <strong>"barks-reader-data-2.zip"</strong> and copy their contents
-                            to <strong>"C:\Users\YourUsername\BarksReader\Reader Files"</strong></li>
-                        <li>Create the necessary default configuration files in <strong>"C:\Users\YourUsername\BarksReader\config"</strong>
+                            to <strong>"C:\Users\YourUsername\BarksReader\Reader Files",</strong></li>
+                        <li>It will create the necessary default configuration files in <strong>"C:\Users\YourUsername\BarksReader\config",</strong>
                         </li>
-                        <li>Search for a directory called <strong>"Fantagraphics Complete Carl Barks Disney
+                        <li>It will search for a directory called <strong>"Fantagraphics Complete Carl Barks Disney
                             Library"</strong> with your comic zips in the following locations:
                             <ul>
                                 <li><strong>"C:\Users\YourUsername\BarksReader"</strong>
@@ -732,8 +742,8 @@
                                 <li><strong>"C:\Users\YourUsername\Books"</strong>
                             </ul>
                         </li>
-                        <li>And finally, run the app</li>
-                        <li>It will only do the installation steps on the first app launch</li>
+                        <li>And finally, it will launch the actual reader app.</li>
+                        <li><strong>NOTE: It will only do the above installation steps on the first app launch.</strong></li>
                     </ul>
                     </p>
                 </div>
@@ -830,22 +840,32 @@
                     <h4>Step 6: Run the Application</h4>
                     <p>After granting permissions, the application will launch normally. Future launches can be done by
                         double-clicking.</p>
+
+                    <p><strong>IMPORTANT:</strong> Depending on the speed of your machine and your internet connection,
+                    it may take a few minutes for the app to launch. To get a better idea of what's happening,
+                    you can launch the app from a terminal where you will see logging. At first, you won't see anything
+                    at all while the exe self-extracts, but eventually you will start to see activity (detailed in the
+                    next step). Depending on your machine
+                    and connection it still may take a while to unzip the supporting data packs. Once these are
+                    done (and providing there are no errors) you will get a welcome screen popup. Here you can
+                    press OK to launch the reader app. One you've done the install for the first time, subsequent
+                    app launches should be fairly quick.</p>
                 </div>
 
                 <div class="install-step">
                     <h4>Step 7: On First Launch</h4>
                     <p>When the application is first launched it will do further installation steps:
                     <ul>
-                        <li>Run the astral python package manager <strong>'uv'</strong> to download and install python
+                        <li>It will run the astral python package manager <strong>'uv'</strong> to download and install python
                             packages required by the app
                         </li>
-                        <li>Unzip <strong>"barks-reader-data-1.zip"</strong> and
+                        <li>It will unzip <strong>"barks-reader-data-1.zip"</strong> and
                             <strong>"barks-reader-data-2.zip"</strong> and copy their contents
                             to <strong>"~/Applications/BarksReader/Reader Files"</strong></li>
-                        <li>Create the necessary default configuration files in
+                        <li>It will create the necessary default configuration files in
                             <strong>"~/Applications/BarksReader/config"</strong>
                         </li>
-                        <li>Search for a directory called <strong>"Fantagraphics Complete Carl Barks Disney
+                        <li>It will search for a directory called <strong>"Fantagraphics Complete Carl Barks Disney
                             Library"</strong> with your comic zips in the following locations:
                             <ul>
                                 <li><strong>"~/Applications/BarksReader"</strong>
@@ -854,8 +874,8 @@
                                 <li><strong>"~/Books"</strong>
                             </ul>
                         </li>
-                        <li>And finally, run the app</li>
-                        <li>It will only do the installation steps on the first app launch</li>
+                        <li>And finally, it will launch the app</li>
+                    <li><strong>NOTE: It will only do the installation steps on the first app launch</strong></li>
                     </ul>
                     </p>
                 </div>
@@ -947,22 +967,32 @@
                         terminal.</p>
                     <p>Or create a desktop shortcut by creating a .desktop file in <strong>"~/.local/share/applications/"</strong>
                     </p>
+
+                    <p><strong>IMPORTANT:</strong> Depending on the speed of your machine and your internet connection,
+                    it may take a few minutes for the app to launch. To get a better idea of what's happening,
+                    you can launch the app from a terminal where you will see logging. At first, you won't see anything
+                    at all while the exe self-extracts, but eventually you will start to see activity (detailed in the
+                    next step). Depending on your machine
+                    and connection it still may take a while to unzip the supporting data packs. Once these are
+                    done (and providing there are no errors) you will get a welcome screen popup. Here you can
+                    press OK to launch the reader app. One you've done the install for the first time, subsequent
+                    app launches should be fairly quick.</p>
                 </div>
 
                 <div class="install-step">
                     <h4>Step 6: On First Launch</h4>
                     <p>When the application is first launched it will do further installation steps:
                     <ul>
-                        <li>Run the astral python package manager <strong>'uv'</strong> to download and install python
+                        <li>It will run the astral python package manager <strong>'uv'</strong> to download and install python
                             packages required by the app
                         </li>
-                        <li>Unzip <strong>"barks-reader-data-1.zip"</strong> and
+                        <li>It will unzip <strong>"barks-reader-data-1.zip"</strong> and
                             <strong>"barks-reader-data-2.zip"</strong> and copy their contents
                             to <strong>"~/opt/barks-reader/Reader Files/"</strong></li>
-                        <li>Create the necessary default configuration files in
+                        <li>It will create the necessary default configuration files in
                             <strong>"~/opt/barks-reader/config"</strong>
                         </li>
-                        <li>Search for a directory called <strong>"Fantagraphics Complete Carl Barks Disney
+                        <li>It will search for a directory called <strong>"Fantagraphics Complete Carl Barks Disney
                             Library"</strong> with your comic zips in the following locations:
                             <ul>
                                 <li><strong>"~/opt/barks-reader"</strong>
@@ -970,8 +1000,8 @@
                                 <li><strong>"~/Books"</strong>
                             </ul>
                         </li>
-                        <li>And finally, run the app</li>
-                        <li>It will only do the installation steps on the first app launch</li>
+                        <li>And finally, it will run the app</li>
+                        <li><strong>NOTE: It will only do the installation steps on the first app launch</strong></li>
                     </ul>
                     </p>
                 </div>
